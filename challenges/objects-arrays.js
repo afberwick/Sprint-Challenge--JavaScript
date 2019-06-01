@@ -6,15 +6,22 @@
   object name, diet, weight, length, period
 */
 
-// tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
+const dinos = [{'dino_name': 'tyrannosaurus', 'diet': 'carnivorous',
+'weighing': 7000, 'sizex': 12, 'alive': 'Late Cretaceous'}
 
-// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
+{'dino_name': 'stegosaurus', 'diet': 'herbivorous', 
+'weighing' : 2000, 'sizex': 9, 'alive': 'Late Jurassic'}
 
-// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+{'dino_name': 'velociraptor', 'diet': 'carnivorous', 
+'weighing': 15, 'sizex': 1.8, 'alive': 'Late Cretaceous'}]
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
+
+
+
+
 console.log();
 
 // What was the diet of a velociraptor?
