@@ -7,10 +7,10 @@
 */
 
 const dinos = [{'dino_name': 'tyrannosaurus', 'diet': 'carnivorous',
-'weighing': 7000, 'sizex': 12, 'alive': 'Late Cretaceous'}
+'weighing': 7000, 'sizex': 12, 'alive': 'Late Cretaceous'},
 
 {'dino_name': 'stegosaurus', 'diet': 'herbivorous', 
-'weighing' : 2000, 'sizex': 9, 'alive': 'Late Jurassic'}
+'weighing' : 2000, 'sizex': 9, 'alive': 'Late Jurassic'},
 
 {'dino_name': 'velociraptor', 'diet': 'carnivorous', 
 'weighing': 15, 'sizex': 1.8, 'alive': 'Late Cretaceous'}]
@@ -19,19 +19,17 @@ const dinos = [{'dino_name': 'tyrannosaurus', 'diet': 'carnivorous',
 
 // How much did tyrannosaurus weigh?
 
+console.log(Object.entries(dinos)[0]);
 
-
-
-console.log();
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(Object.entries(dinos)[2]);
 
 // How long was a stegosaurus?
-console.log();
+console.log(Object.entries(dinos)[1]);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(Object.entries(dinos)[0]);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
