@@ -7,6 +7,14 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
+function sumNums(x, y, cb) {
+  cb(x + y);
+}
+
+sumNums(11, 17, function(total) {
+   console.log(total);
+});
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -14,29 +22,54 @@
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+function consume(x, y, cb) {
+  cb(x + y);
+}
+
+consume(1, 1, function(total2) {
+   console.log(total2);
+});
+
+function consume(x, y, cb) {
+  cb(x * y);
+}
+
+consume(10, 10, function(total3) {
+   console.log(total3);
+});
+
+function consume(firstname, lastname, cb) {
+  cb(firstname + ' ' + lastname);
+}
+
+consume('Asa', 'Shalom', function(total4) {
+   console.log('Hello ' + total4 + ', nice to meet you!');
+});
+
+
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+// consume(2,2,add);
+// consume(10,16,multiply); 
+// consume("Mary","Poppins", greeting); 
 
 
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
+//********************************************************* */
+//Explanation: Because it is within the curly brackets
+//of function myFunction()
+//********************************************************** */
+// const external = "I'm outside the function";
 
-// Explanation: 
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-
-const external = "I'm outside the function";
-
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
-
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   };
+//   nestedFunction();
+// }
+// myFunction();
