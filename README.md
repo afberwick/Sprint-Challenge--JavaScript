@@ -29,14 +29,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-
+.forEach does not return anything while .map does
 2. What is the difference between a function and a method?
-
+Functions and methods both are functions in JavaScript. A method is just a function which is a property of an object. 
 3. What is closure?
-
+A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables — a scope chain.
 4. Describe the four rules of the 'this' keyword.
+Precedence of the four rules:
+(The JavaScript interpreter will ask in this order)
 
+Is the function called by new?
+Is the function called by call(), apply(), or bind()?
+Is the function called as a method, ie: obj.func()?
+Is the function called in the global scope?
+
+If strict mode is enabled, return undefined.
+Otherwise, return the global object, ie: window.
 5. Why do we need super() in an extended class?
+When used in a constructor, the super keyword appears alone and must be used before the this keyword is used. The super keyword can also be used to call functions on a parent object.
 
 ## Project Set up
 
