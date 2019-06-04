@@ -57,19 +57,19 @@ consume('Asa', 'Shalom', function(total4) {
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
+//********************************************************* */
+//Explanation: Because it is within the curly brackets
+//of function myFunction()
+//********************************************************** */
+// const external = "I'm outside the function";
 
-// Explanation: 
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-
-const external = "I'm outside the function";
-
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
-
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   };
+//   nestedFunction();
+// }
+// myFunction();
