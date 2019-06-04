@@ -22,6 +22,31 @@ sumNums(11, 17, function(total) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+function consume(x, y, cb) {
+  cb(x + y);
+}
+
+consume(1, 1, function(total2) {
+   console.log(total2);
+});
+
+function consume(x, y, cb) {
+  cb(x * y);
+}
+
+consume(10, 10, function(total3) {
+   console.log(total3);
+});
+
+function consume(firstname, lastname, cb) {
+  cb(firstname + ' ' + lastname);
+}
+
+consume('Asa', 'Shalom', function(total4) {
+   console.log('Hello ' + total4 + ', nice to meet you!');
+});
+
+
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // consume(2,2,add); // 4
