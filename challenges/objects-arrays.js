@@ -6,7 +6,7 @@
   object name, diet, weight, length, period
 */
 
-const dinos = [{'dino_name': 'tyrannosaurus', 'diet': 'carnivorous',
+const dinos = [{'roar': 'RAWERSRARARWERSARARARRRR!', 'dino_name': 'tyrannosaurus', 'diet': 'carnivorous',
 'weighing': 7000, 'sizex': 12, 'alive': 'Late Cretaceous'},
 
 {'dino_name': 'stegosaurus', 'diet': 'herbivorous', 
@@ -19,21 +19,26 @@ const dinos = [{'dino_name': 'tyrannosaurus', 'diet': 'carnivorous',
 
 // How much did tyrannosaurus weigh?
 
-console.log(Object.entries(dinos)[0]);
+console.log(`A tyrannosaurus weighs ${dinos[0].weighing}kg.`);
+
+// // What was the diet of a velociraptor?
+
+console.log(`A velociraptors is ${dinos[2].diet}.`);
+
+// // How long was a stegosaurus?
+
+console.log(`A stegosaurus is ${dinos[1].sizex}m.`);
+
+// // What time period did tyrannosaurus live in?
+
+console.log(`A tyrannosaurus lived during the ${dinos[0].alive} stage.`);
 
 
-// What was the diet of a velociraptor?
-console.log(Object.entries(dinos)[2]);
+// // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 
-// How long was a stegosaurus?
-console.log(Object.entries(dinos)[1]);
+let soundDino = dinos[dinos.length-3];
+console.log(soundDino.roar)
 
-// What time period did tyrannosaurus live in?
-console.log(Object.entries(dinos)[0]);
-
-
-// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
 
 
 // ==== Arrays ====
@@ -51,13 +56,24 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 {"id":9,"first_name":"Michail","university":"Universidad Católica de Ávila","email":"mrome8@shinystat.com"},
 {"id":10,"first_name":"Hube","university":"Universitat Rovira I Virgili Tarragona","email":"hlethbrig9@foxnews.com"}]
 
-/* Request 1: Create a new array called universities that contains all the universities in the graduates array.  
+//Request 1: Create a new array called universities that contains all the universities in the graduates array.
 
-Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities)
+let universities = graduates.map((unis) => {
+  return unis.university;
+});
+console.log(universities); 
+
+
+// Once you have the new array created, sort the universities alphabetically and log the result. */
+
+universities.sort();
+
+console.log(universities);
+
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
+
+
 
 The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
