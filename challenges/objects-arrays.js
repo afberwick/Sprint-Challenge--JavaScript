@@ -71,16 +71,20 @@ universities.sort();
 console.log(universities);
 
 
-/* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
+//Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
-
-
-The resulting contact information should have a space between the first name and the email information like this: 
-Name email@example.com
-
-Log the result of your new array. */
-const contactInfo = [];
+let contactInfo = [];
+let emailName = graduates.forEach(function(i){
+  contactInfo.push(i.first_name + " " + i.email);
+});
 console.log(contactInfo);
+
+// The resulting contact information should have a space between the first name and the email information like this: 
+// Name email@example.com
+
+// Log the result of your new array. */
+// const contactInfo = [];
+// console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
